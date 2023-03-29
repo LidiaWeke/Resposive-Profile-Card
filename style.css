@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.small{
+    width: 120px;
+  height: 120px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #eff6e0;
+    font-family: 'Hind', sans-serif;
+    padding: 0 20px;
+}
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #aec3b0;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5)
+}
+.header{
+    border-right: solid #8b9c8d;
+}
+.header,.descripcion{
+    padding: 15px;
+    text-align: center;
+}
+.header a{
+    position: relative;
+    display: block;
+}
+.header img{
+border-radius: 50%;
+margin: 20px 30px;
+}
+.descripcion{
+    background: #598392;
+    position:relative;
+}
+.descripcion p{
+    margin: 20px 30px;
+}
+.descripcion .social{
+    margin-top: 20px;
+}
+.descripcion .social a{
+    display: inline-block;
+    padding: 5px 15px;
+    color: #124559;
+    font-size: 30px;
+}
+.header h2{
+    color: #124559;
+}
+.header h4{
+    margin-bottom: 20px;
+}
+
+@media (max-width:640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none ;
+    }
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+    .header h4{
+        margin: 0;
+    }
+}
